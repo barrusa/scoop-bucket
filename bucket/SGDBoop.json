@@ -3,5 +3,6 @@
   "homepage": "https://www.steamgriddb.com/boop",
   "version": "v1.3.1",
   "license": "Zlib",
-  "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.3.1/sgdboop-win64.zip"
+  "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.3.1/sgdboop-win64.zip",
+  "hash": "869e064cde9bb2d0714ae122d3cf661d3532db4ef5e3b26cffcdba0c531e5b1e"
 }
