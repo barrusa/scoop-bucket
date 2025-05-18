@@ -1,10 +1,6 @@
 {
-  "hash": "",
   "homepage": "https://www.steamgriddb.com/boop",
   "version": "v1.3.1",
-  "license": "zlib",
-  "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.3.1/sgdboop-win64.zip",
-  "extract_dir": "",
-  "depends": "",
-  "bin": ""
+  "license": "Zlib",
+  "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.3.1/sgdboop-win64.zip"
 }
