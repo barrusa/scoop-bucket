@@ -1,4 +1,5 @@
 {
+  "description": "SGDBoop is a tool that automatically applies assets from SteamGridDB directly to your Steam library, removing the need to download and set them manually.",
   "homepage": "https://www.steamgriddb.com/boop",
   "version": "v1.3.1",
   "license": "Zlib",
