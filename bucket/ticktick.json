@@ -1,16 +1,16 @@
 {
-    "version": "6.2.2.0",
+    "version": "8.0.0.2",
     "description": "Your wonderful to-do & task list to make all things done and get life well organized.",
     "homepage": "https://ticktick.com/home",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://ticktick.com/static/getApp/download?type=win64",
-            "hash": "db965753be52bf0449cb1bb5a1931ff38146c861ea5ea7ddbb5d6c274c6bc30c"
+            "hash": "5db85f11176da76755f7cd3cbe361e5b4381bf589095d5159a41f3a42bf45b2a"
         },
         "32bit": {
             "url": "https://ticktick.com/static/getApp/download?type=win",
-            "hash": "4881084b898e6708aec61b398207c41dbb32d1d476edfe8ec8d844d644b01b45"
+            "hash": "b2e6aa2b1ae44e402c39bc34e761e742332c5b73392936cbccdf7467312bccc4"
         }
     },
     "shortcuts": [
