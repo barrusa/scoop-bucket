@@ -1,5 +1,5 @@
 {
-    "version": "1.3.1",
+    "version": "1.4.4",
     "description": "SGDBoop is a tool that automatically applies assets from SteamGridDB directly to your Steam library, removing the need to download and set them manually.",
     "homepage": "https://www.steamgriddb.com/boop",
     "license": {
@@ -8,13 +8,19 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.3.1/sgdboop-win64.zip",
-            "hash": "869e064cde9bb2d0714ae122d3cf661d3532db4ef5e3b26cffcdba0c531e5b1e"
+            "url": "https://github.com/SteamGridDB/SGDBoop/releases/download/v1.4.4/sgdboop-win64.zip",
+            "hash": "e474409f828af9bc70ebdbba0dcf9287ab7ba33191ffe00ed2930b41e8606082"
         }
     },
+    "bin": "SGDBoop.exe",
+    "shortcuts": [
+        [
+            "SGDBoop.exe",
+            "SGDBoop"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/SteamGridDB/SGDBoop",
-        "regex": "\\/releases\\/tag\\/v([\\d.]+)"
+        "github": "https://github.com/SteamGridDB/SGDBoop"
     },
     "autoupdate": {
         "architecture": {

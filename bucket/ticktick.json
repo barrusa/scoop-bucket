@@ -1,15 +1,15 @@
 {
-    "version": "8.0.0.2",
+    "version": "8.2.5.0",
     "description": "Your wonderful to-do & task list to make all things done and get life well organized.",
     "homepage": "https://ticktick.com/home",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://ticktick.com/static/getApp/download?type=win64",
+            "url": "https://download.ticktick.app/download/win64/tick_win_setup_release_x64_8250.exe",
             "hash": "5db85f11176da76755f7cd3cbe361e5b4381bf589095d5159a41f3a42bf45b2a"
         },
         "32bit": {
-            "url": "https://ticktick.com/static/getApp/download?type=win",
+            "url": "https://download.ticktick.app/download/win/tick_win_setup_release_x86_8250.exe",
             "hash": "b2e6aa2b1ae44e402c39bc34e761e742332c5b73392936cbccdf7467312bccc4"
         }
     },
@@ -21,16 +21,24 @@
     ],
     "persist": "TickTick.exe.config",
     "checkver": {
-        "url": "https://github.com/qyurila/scoop-bucket/wiki/Manual-Version-Info-Provider",
-        "regex": "ticktick: ([\\.\\d]+)"
+        "script": [
+            "$req = [System.Net.HttpWebRequest]::Create('https://ticktick.com/static/getApp/download?type=win64')",
+            "$req.AllowAutoRedirect = $false",
+            "$res = $req.GetResponse()",
+            "$loc = $res.Headers['Location']",
+            "$res.Close()",
+            "$loc"
+        ],
+        "regex": "tick_win_setup_release_x64_(\\d)(\\d)(\\d)(\\d)\\.exe",
+        "replace": "${1}.${2}.${3}.${4}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ticktick.com/static/getApp/download?type=win64"
+                "url": "https://download.ticktick.app/download/win64/tick_win_setup_release_x64_$cleanVersion.exe"
             },
             "32bit": {
-                "url": "https://ticktick.com/static/getApp/download?type=win"
+                "url": "https://download.ticktick.app/download/win/tick_win_setup_release_x86_$cleanVersion.exe"
             }
         }
     },
