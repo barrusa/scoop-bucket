@@ -1,0 +1,20 @@
+{
+    "version": "7.40",
+    "description": "Checks if a system running Windows is suitable for processing real-time audio and other tasks",
+    "homepage": "https://www.resplendence.com/latencymon",
+    "license": "Freeware",
+    "url": "https://www.resplendence.com/download/LatencyMon.exe",
+    "hash": "c124342da2a844da0699901476b27226da1d0d30bf8e940c9f847d67d46a1157",
+    "innosetup": true,
+    "bin": "LatMon.exe",
+    "shortcuts": [
+        [
+            "LatMon.exe",
+            "LatencyMon"
+        ]
+    ],
+    "checkver": "Latest version: LatencyMon v\\s*([\\d.]+)",
+    "autoupdate": {
+        "url": "https://www.resplendence.com/download/LatencyMon.exe"
+    }
+}

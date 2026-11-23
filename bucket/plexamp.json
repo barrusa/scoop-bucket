@@ -1,0 +1,24 @@
+{
+    "version": "4.50.20",
+    "description": "A beautiful Plex music player for audiophiles, curators, and music explorers",
+    "homepage": "https://www.plex.tv/plexamp/",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://plexamp.plex.tv/desktop/Plexamp-4.50.20-x86_64-setup.exe",
+            "hash": "c08b555090e437c2f97ba6d37c5bf68dfa1c2dbb0755488af5bbe1afe4def0f1"
+        }
+    },
+    "installer": {
+        "script": "Start-Process -Wait \"$dir\\Plexamp-$version-x86_64-setup.exe\" -ArgumentList '/S', \"/D=$dir\""
+    },
+    "uninstaller": {
+        "script": "if (Test-Path \"$dir\\uninstall.exe\") { Start-Process -Wait \"$dir\\uninstall.exe\" -ArgumentList '/S' }"
+    },
+    "shortcuts": [
+        [
+            "Plexamp.exe",
+            "Plexamp"
+        ]
+    ]
+}
