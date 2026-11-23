@@ -1,0 +1,34 @@
+{
+    "version": "9.3.1",
+    "description": "Zelda Ocarina of Time Decompilation (Ship of Harkinian)",
+    "homepage": "https://www.shipofharkinian.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/HarbourMasters/Shipwright/releases/download/9.3.1/SoH-Dewey-Bravo-Win64.zip",
+            "hash": "429292a0bfbdfcda283b33c1538ecdc49163b9ed53e8702cac80b2489d9fe26c"
+        }
+    },
+    "shortcuts": [
+        [
+            "soh.exe",
+            "Zelda - Ocarina of Time (SoH)"
+        ]
+    ],
+    "persist": [
+        "Save",
+        "mods",
+        "roms"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/HarbourMasters/Shipwright/releases/latest",
+        "regex": "releases/download/([\\d.]+)/(?<asset>SoH-[^\"]+-Win64\\.zip)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/HarbourMasters/Shipwright/releases/download/$version/$matchAsset"
+            }
+        }
+    }
+}
