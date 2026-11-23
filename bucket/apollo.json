@@ -9,6 +9,10 @@
             "hash": "42b2aefaacb3474511517a56b96ee9f0517f30ac38b5dd2fda9fd5b478f5021a"
         }
     },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\Apollo-$version.exe\" \"$dir\" -Removal",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall.exe\" -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
     "bin": "sunshine.exe",
     "shortcuts": [
         [

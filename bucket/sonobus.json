@@ -10,6 +10,10 @@
         }
     },
     "innosetup": true,
+    "pre_install": [
+        "Move-Item \"$dir\\SonoBus,1.exe\" \"$dir\\SonoBus.exe\" -Force",
+        "Remove-Item \"$dir\\SonoBus,2.exe\" -ErrorAction SilentlyContinue"
+    ],
     "bin": "SonoBus.exe",
     "shortcuts": [
         [
